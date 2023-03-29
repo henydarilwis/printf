@@ -1,11 +1,7 @@
 #ifndef MAIN_H
-
 #define MAIN_H
 #include <stdarg.h>
-<<<<<<< HEAD
-
 #include <stdio.h>
-
 #include <unistd.h>
 
 
@@ -37,7 +33,6 @@
 #define S_SHORT 1
 
 
-=======
 #include <stdio.h>
 #include <unistd.h>
 
@@ -54,7 +49,6 @@
 /* SIZES */
 #define S_LONG 2
 #define S_SHORT 1
->>>>>>> 736a37ed236aba77fb5d028c98fde0423cd3197a
 
 /**
  * struct fmt - Struct op
@@ -62,7 +56,6 @@
  * @fmt: The format.
  * @fn: The function associated.
  */
-<<<<<<< HEAD
 
 struct fmt
 
@@ -77,7 +70,6 @@ int (*fn)(va_list, char[], int, int, int, int);
 
 
 
-=======
 struct fmt
 {
 	char fmt;
@@ -85,14 +77,14 @@ struct fmt
 };
 
 
->>>>>>> 736a37ed236aba77fb5d028c98fde0423cd3197a
+
 /**
  * typedef struct fmt fmt_t - Struct op
  *
  * @fmt: The format.
  * @fm_t: The function associated.
  */
-<<<<<<< HEAD
+
 
 typedef struct fmt fmt_t;
 
@@ -248,7 +240,6 @@ long int convert_size_unsgnd(unsigned long int num, int size);
 
 
 
-=======
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
@@ -326,5 +317,5 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
->>>>>>> 736a37ed236aba77fb5d028c98fde0423cd3197a
+
 #endif /* MAIN_H */
