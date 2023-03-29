@@ -1,7 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdarg.h>
-<<<<<<< HEAD
 #include <stdio.h>
 #include <unistd.h>
 
@@ -18,19 +17,13 @@
 /* SIZES */
 #define S_LONG 2
 #define S_SHORT 1
-=======
-#include <stddef.h>
-#include <stdlib.h>
->>>>>>> c88657b8907eab542afa8d062391f0cec9130080
 
 /**
- * struct structprint - structure containing
- * @q: the location and method to translate data to characters.
- * @u: print function for specific type.
+ * struct fmt - Struct op
  *
- * Return: int
+ * @fmt: The format.
+ * @fn: The function associated.
  */
-<<<<<<< HEAD
 struct fmt
 {
 	char fmt;
@@ -122,27 +115,3 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
-=======
-typedef struct structprint
-{
-	char *q;
-	int (*u)(char *format, va_list);
-} structype;
-
-int _putchar(char ch);
-int _puts(char *string);
-int printc(char *format, va_list);
-int printstr(char *format, va_list);
-int (*driver(char *format))(char *format, va_list);
-int _printf(char *format, ...);
-int printint(char *format, va_list pa);
-int integer(int number);
-int contadordigit(int number);
-int _abs(int number);
-int printpercent(char *format, va_list pa);
-int printhex(char *format, va_list);
-int printHEX(char *format, va_list);
-int printocta(char *format, va_list);
-int print_unsign(char *format, va_list);
-#endif
->>>>>>> c88657b8907eab542afa8d062391f0cec9130080
